@@ -1,8 +1,8 @@
 :root{
-    --colorPrimary: ;
-    --colorSecundary: ;
-    --colorBody: ;
-    --colorTertiary: ;
-    --colorQuaternary: ;
-    --colorMobileMenu: ;
+    --colorPrimary:  #0D1F23;
+    --colorSecundary: #132E35;
+    --colorBody: #2D4A53;
+    --colorTertiary: #69818D;
+    --colorQuaternary: #AFB3B7;
+    --colorMobileMenu: #5A636A;
 } 
