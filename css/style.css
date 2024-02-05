@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("variables.css");
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family:'Poppins 200', sans-serif;
-    
 }
 
 body{
-    background-color: #5A636A;
+    background-color: var(--colorQuaternary);
 }
 
 header {
@@ -32,7 +32,6 @@ nav {
     align-content: center;
     width: 100%;
     background-color: var(---colorPrimary);
-    
 }
 
 nav a{
@@ -82,7 +81,7 @@ nav a{
     object-fit: contain;
 }
 
-.mainImage{
+.mainImagenes{
     width: 100%;
     height: 100%;
     display: flex;
@@ -106,10 +105,16 @@ nav a{
     color: var(--colorQuaternary); /*color temporal*/
 }
 
+
 .box3 h2{
+    color: var(--colorSecundary);
+    padding-top: 40px;
     padding-bottom: 15px;
     font-size: 2rem;
     margin: 0;
+}
+.box3 p{
+    color: var(--colorPrimary);
 }
 
 input{
@@ -130,6 +135,7 @@ button .carrito{
 }
 
 /*ventana emergente*/
+
 .body, .modal{
     width: 100%;
     height: 100vh;
@@ -137,18 +143,17 @@ button .carrito{
     justify-content: center;
     align-items: center;
 }
+
 .lbl-modal{
-    color: #000;
     font-size: 15px;
     outline: none;
     border: 0;
     border-radius: 5px;
-    background: #008000;
     padding: 10px 15px;
     box-sizing: border-box;
     cursor: pointer;
-    }
-    
+}
+
 .modal{
     position: fixed;
     top: 0;
@@ -159,29 +164,31 @@ button .carrito{
     visibility: hidden;
 }
 
-#btn-modal:checked ~ .modal{
+.btn-modal:checked ~ .modal{
     opacity: 1;
-    
-    visibility: visible;     
+    visibility: visible;
 }
+
 .contenedor{
     width: 500px;
-    height: 500px;
+    height: 530px;
     margin: auto;
     background: #fff;
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
     transition: all 500ms ease;
     position: relative;
-    transform: translateY(-30%);
 }
-#btn-modal:checked ~ .modal .contenedor{
+
+.btn-modal:checked ~ .modal .contenedor{
     transform: translateY(0%);
-}    
+}
+
 .contenedor .headerContainer{
     padding: 10px;
-    background: #db8046;
+    background: var(--colorSecundary);
     color: #fff;
 }
+
 
 .contenedor label{
     position: absolute;
@@ -191,11 +198,13 @@ button .carrito{
     font-size: 15px;
     cursor: pointer;
 }
-#btn-modal{
+
+.btn-modal{
     display: none;
 }
+
 .lbl-modal{
-    background: #fff;
+    background: var(--colorTertiary);
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
@@ -203,7 +212,7 @@ button .carrito{
 
 .contenedor .carrito{
     display: flex;
-    justify-content: start;
+    margin: auto;
 }
 
 .contenedor img{
@@ -216,4 +225,39 @@ button .carrito{
     display: flex;
     justify-content: start;
     margin: 5px;
-} 
+}
+
+.carrito{
+    display: flex;
+    padding: 10px;
+    background: var(--colorSecundary);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.compras {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.compras img {
+    width: 60px; 
+    height: auto; 
+    margin-right: 10px; /
+}
+
+.compras div {
+    flex-grow: 1; 
+}
+
+.compras h4 {
+    margin: 0; 
+}
+
+.compras p {
+    margin: 0; 
+}
+
+

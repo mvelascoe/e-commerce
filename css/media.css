@@ -1,3 +1,114 @@
 @import url("variables.css");
 
-@media (max-width: 800px){}
+@media (max-width: 768px) {
+    .menu {
+        margin-top: 12vh;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s;
+        padding: 0.3rem;
+        background-color: #40A2E3;
+        height: 90%;
+        z-index: 100;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .menu.active {
+        transform: translateX(0%);
+    }
+
+
+
+    header {
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var( --colorSecundary);
+        width: 100%;
+        padding-top: 10px;
+        display: flex;
+        align-content: center;
+        height: 10%;
+    }
+
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box1{
+        width: 100%;
+    }
+
+    .product-main-image img:hover {
+        scale: 1;
+    }
+
+    .box3 {
+        /* border: solid 1px green; */
+        width: 95%;
+        /* margin-left: 7px; */
+    }
+
+    #btnMenu {
+        
+        display: flex;
+        /* color: #fff; */
+        width: 100%;
+        height: 100%;
+        font-size: 3rem;
+        color: #fff;
+        justify-items: center;
+        align-items: center;
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    .encabezado {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        /* align-content: center; */
+    }
+
+    nav a:hover {
+        background-color: #0D9276;
+        transition-duration: 0.7s;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+        font-size: 1.5rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+    }
+
+    .dialogo1 {
+        width: 90vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll;
+        
+    }
+    
+
+} 
