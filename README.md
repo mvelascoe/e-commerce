@@ -26,7 +26,7 @@ Se aplicó un diseño que permite el desplazamiento horizontal en el menú para 
 
 Se aplicaron estilos y diseños que garantizan una buena experiencia de usuario en dispositivos de diferentes tamaños.
 
-![Version PC]()
+![Version PC](https://github.com/marivelascoe/e-commerce/blob/main/storage/gif/lv_0_20240205231442.gif)
 
-![Version Movil]()
+![Version Movil](https://github.com/marivelascoe/e-commerce/blob/main/storage/gif/lv_0_20240205224745.gif)
 
